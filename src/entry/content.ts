@@ -1,10 +1,8 @@
 (async () => {
-  console.log("insert @", new Date().toLocaleString());
-
   chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
     console.log("content script receive message: ", msg);
     if (msg.action === "hello") {
-      sendResponse("Hello world. @" + new Date().toLocaleString());
+      sendResponse(`Hello ${msg.name}.`);
     }
 
     if (msg.action === "fetch") {

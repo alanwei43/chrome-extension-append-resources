@@ -1,0 +1,63 @@
+$success: #7952b3;
+
+@import "bootstrap/scss/bootstrap.scss";
+
+.show-only-xs {
+  display: none;
+}
+
+@include media-breakpoint-down(sm) {
+  .show-only-xs {
+    display: block;
+  }
+}
+
+.show-only-sm {
+  display: none;
+}
+
+@include media-breakpoint-between(sm, md) {
+  .show-only-sm {
+    display: block;
+  }
+}
+
+.show-only-md {
+  display: none;
+}
+
+@include media-breakpoint-between(md, lg) {
+  .show-only-md {
+    display: block;
+  }
+}
+
+.show-only-lg {
+  display: none;
+}
+
+@include media-breakpoint-between(lg, xl) {
+  .show-only-lg {
+    display: block;
+  }
+}
+
+.show-only-xl {
+  display: none;
+}
+
+@include media-breakpoint-between(xl, xxl) {
+  .show-only-xl {
+    display: block;
+  }
+}
+
+.show-only-xxl {
+  display: none;
+}
+
+@include media-breakpoint-up(xxl) {
+  .show-only-xxl {
+    display: block;
+  }
+}
